@@ -49,7 +49,8 @@ sampleApp.controller('htmlQuiz_pg',function($scope,$location,$http,$routeParams)
             method:"POST"
         }).success(
             function(res,textStatus){
-                //console.log(res)
+                console.log(res)
+                debugger
                  $scope.quiz_model = res;
                  quiz_model =  $scope.quiz_model;
 
@@ -64,7 +65,7 @@ sampleApp.controller('htmlQuiz_pg',function($scope,$location,$http,$routeParams)
                  $scope.u_ans = '';//user ans are upated in this model var
                  var ans_given = false;
                  $scope.change_q = function(state){
-
+debugger
                  var next_btn=next+1;
                  var prev_btn=next-1;
 
@@ -135,13 +136,13 @@ sampleApp.controller('htmlQuiz_pg',function($scope,$location,$http,$routeParams)
                  var q_id =  quiz_model[next+1].id
                  var u_ans = $scope.u_ans;
                  ans_forward(q_id,u_ans);
-                 //console.log(q_id+"----------"+u_ans)
+                 console.log(q_id+"----------"+u_ans)
 
                  for(var i=0;i<quiz_model.length;i++){
-                 //console.log("user_ans"+user_ans[i].q_id + "quiz_model--"+quiz_model[i].id);
+                 console.log("user_ans"+user_ans[i].q_id + "quiz_model--"+quiz_model[i].id);
 
                  if(quiz_model[i].id == user_ans[i].q_id){
-                 //console.log("Q:"+(i+1)+" as"+user_ans[i].u_ans +"qm"+quiz_model[i].r_a);
+                 console.log("Q:"+(i+1)+" as"+user_ans[i].u_ans +"qm"+quiz_model[i].r_a);
                  if((user_ans[i].u_ans) == (quiz_model[i].r_a)){
                  urite_ans ++;
                  }//if internal

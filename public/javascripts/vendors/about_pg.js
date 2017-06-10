@@ -1,3 +1,3 @@
-sampleApp.Controller("aboutus_pg",function($scope){
-	$scope.inBtn1 = false;
-})
+sampleApp.controller('about_pg',function($scope,$location){
+	$scope.inBtn1 = "true";
+});

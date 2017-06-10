@@ -13,7 +13,7 @@ var sampleApp = angular.module("myApp",['ui.bootstrap'])
              })
              .when('/aboutUs',{
                 templateUrl:'views/about_pg.html',
-                controller:'aboutus_pg'
+                controller:'about_pg'
              })
 
              .when('/register',{

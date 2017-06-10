@@ -20,14 +20,15 @@
             <br>
             <input type="radio" ng-model="question.r_a" value="a4">
             <input type="text" class="input-block-level" placeholder="Answer 4" ng-model="question.a4" ng-minlength="3"  required>
-            <input type="radio" ng-show="false" ng-model="question.q_name" ng-checked="true" value="html5">
-
+            <br>
+            <input type="radio" class="input-block-level" ng-model="question.q_name" value="html5">
+            HTML5
               {{error}}
 
-
+            <br>
             <button class="btn btn-large btn-success" type="submit" ng-disabled="!addQuestForm.$valid">Add Question</button>
 
-        </form>
+        </form> 
         </div>
 
     </div><!--container-->
