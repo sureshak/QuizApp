@@ -50,7 +50,6 @@ sampleApp.controller('htmlQuiz_pg',function($scope,$location,$http,$routeParams)
         }).success(
             function(res,textStatus){
                 console.log(res)
-                debugger
                  $scope.quiz_model = res;
                  quiz_model =  $scope.quiz_model;
 
@@ -65,7 +64,6 @@ sampleApp.controller('htmlQuiz_pg',function($scope,$location,$http,$routeParams)
                  $scope.u_ans = '';//user ans are upated in this model var
                  var ans_given = false;
                  $scope.change_q = function(state){
-debugger
                  var next_btn=next+1;
                  var prev_btn=next-1;
 
